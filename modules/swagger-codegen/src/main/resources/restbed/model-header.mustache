@@ -37,8 +37,10 @@ public:
     /// <summary>
     /// {{description}}
     /// </summary>
-    {{{datatype}}} {{getter}}() const;
+    {{^isNotContainer}}{{{datatype}}}& {{getter}}();
+    {{/isNotContainer}}{{#isNotContainer}}{{{datatype}}} {{getter}}() const;
     void {{setter}}({{{datatype}}} value);
+    {{/isNotContainer}}
     {{/vars}}
 
 protected:

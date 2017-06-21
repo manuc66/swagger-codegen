@@ -65,14 +65,12 @@ public:
     /// <summary>
     /// 
     /// </summary>
-    std::vector<std::string> getPhotoUrls() const;
-    void setPhotoUrls(std::vector<std::string> value);
-    /// <summary>
+    std::vector<std::string>& getPhotoUrls();
+        /// <summary>
     /// 
     /// </summary>
-    std::vector<std::shared_ptr<Tag>> getTags() const;
-    void setTags(std::vector<std::shared_ptr<Tag>> value);
-    /// <summary>
+    std::vector<std::shared_ptr<Tag>>& getTags();
+        /// <summary>
     /// pet status in the store
     /// </summary>
     std::string getStatus() const;
